@@ -6,11 +6,6 @@ use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
     public function run()
     {
         $tags = \App\Models\Tag::factory(10)->create();
@@ -25,6 +20,6 @@ class DatabaseSeeder extends Seeder
                 'article_id'=>$article->id
             ]);
         });
-        // User::factory(10)->create();
+
     }
 }
