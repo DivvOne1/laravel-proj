@@ -9,4 +9,5 @@ class State extends Model
 {
     use HasFactory;
     protected $fillable = ['likes','views','article_id'];
+    public $timestamps= false;
 }
