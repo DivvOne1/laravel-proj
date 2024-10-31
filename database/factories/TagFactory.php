@@ -7,7 +7,13 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class TagFactory extends Factory
 {
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
     protected $model = Tag::class;
+
     /**
      * Define the model's default state.
      *
@@ -16,7 +22,7 @@ class TagFactory extends Factory
     public function definition()
     {
         return [
-            'label' => $this->faker->word(),
+           'label' => $this->faker->word,
         ];
     }
 }
